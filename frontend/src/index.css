@@ -1,0 +1,192 @@
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	/*outline: none;*/
+}
+
+a:focus,
+a:active {
+	/* outline: none;*/
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    /* color: inherit; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+a:hover  {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+
+
+
+
+
+body {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.105em;
+}
+
+.container {
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+.auth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.auth__logo {
+  margin-bottom: 10%;
+}
+.auth__sign-in {
+  width: 470px;
+  height: 470px;
+  background-color: rgba(249, 212, 0);
+  border-radius: 21px;
+  animation: shadow 7s infinite ease-in-out;
+}
+@keyframes shadow {
+  from {
+    box-shadow: 0px 0px 50px 10px rgba(249, 212, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0px 0px 100px 40px rgba(249, 212, 0, 0.3);
+  }
+  to {
+    box-shadow: 0px 0px 50px 10px rgba(249, 212, 0, 0.3);
+  }
+}
+.auth__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+}
+.auth__input {
+  width: 300px;
+  border-bottom: 2px solid #000000;
+  padding-top: 7px;
+}
+.auth__input:first-child {
+  margin-bottom: 71px;
+}
+.inp-login {
+  width: 100%;
+  letter-spacing: 0.105em;
+}
+.inp-pass {
+  width: 100%;
+  letter-spacing: 0.105em;
+}
+.inp-pass::placeholder, .inp-login::placeholder {
+  color: #000;
+}
+.btn-signIn {
+  width: 159px;
+  height: 47px;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 21px;
+  margin-top: 92px;
+  letter-spacing: 0.105em;
+  transition: all .4s ease;
+}
+.btn-signIn:hover {
+  background-color: #fff;
+  color: #000;
+}
