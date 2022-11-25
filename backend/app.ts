@@ -7,6 +7,7 @@ import authRouter from './src/auth/routers/auth.router'
 const PORT = process.env.PORT
 const MONGO_URI = process.env.MONGO_URI
 
+// Создание приложения
 const app = express()
 
 app.use(express.json())
