@@ -7,9 +7,6 @@ function App() {
     </div>
   )
 }
-
-
-// look at this
-// the men
+// look at the guy
 
 export default App
