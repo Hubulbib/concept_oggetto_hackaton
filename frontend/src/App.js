@@ -9,6 +9,6 @@ function App() {
 }
 
 
-// look at this guy
+// look at this
 
 export default App
