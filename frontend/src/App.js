@@ -1,5 +1,6 @@
 import React from 'react';
 import Auth from './pages/auth/Auth';
+import Form3 from './pages/form/components/Form3';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,7 +12,7 @@ import Forms from './pages/form/Forms';
 
 function App() {
   return (
-    <Forms />
+    <Form3 />
   );
 }
 

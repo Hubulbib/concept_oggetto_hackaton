@@ -216,7 +216,7 @@ body {
   top: 20px;
   left: 20px;
 }
-.form__title {
+.form__title, .form3__title {
   color: rgba(249, 212, 0, 1);
   font-weight: 400;
   font-size: 48px;
@@ -236,4 +236,59 @@ body {
 }
 .btn-form {
   margin-bottom: 55px;
+}
+
+
+.form3 {
+  padding-top: 89px;
+  width: 100%;
+  height: calc(150vh);
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  zoom: 67%;
+}
+.form3__logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.form3__title {}
+.form3__sub {
+  background-color: #F9D400;
+  font-size: 24px;
+  line-height: 29px;
+  width: 470px;
+  padding: 26px 53px 27px 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 21px;
+  animation: shadow 7s infinite ease-in-out;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.form3__list {
+  max-width: 1021px;
+  gap: 22px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form3__item {
+  width: 325px;
+}
+.form3__item:hover {
+  opacity: .5;
+}
+.form3__btn {
+  margin-top: 80px;
+  border-radius: 21px;
+  background-color: #F9D400;
+  width: 159px;
+  height: 47px;
+  transition: all .3s ease;
+}
+.form3__btn:hover {
+  background-color: #fff;
 }
