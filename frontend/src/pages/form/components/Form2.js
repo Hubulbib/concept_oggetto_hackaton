@@ -2,6 +2,7 @@ import React from 'react';
 import Inp from '../../../components/Inp';
 import img1 from '../img/img1.png'
 import img2 from '../img/img2.png'
+import img3 from '../img/img3.png'
 
 export default function Form2() {
   return (
@@ -24,6 +25,14 @@ export default function Form2() {
           <div className='form2__text'>
             <p className='form2__title'>Офис в Ростове-на-Дону</p>
             <p className='form2__sub'>ул. Нижнебульварная, 6, БЦ, "5 морей"</p>
+          </div>
+        </li>
+        <li className='form2__item'>
+          <div className='form2__img'>
+            <img src={img3} />
+          </div>
+          <div className='form2__text'>
+            <p className='form2__title'>Another city</p>
           </div>
         </li>
       </ul>
