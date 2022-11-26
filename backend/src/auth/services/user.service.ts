@@ -7,10 +7,6 @@ import {ApiError} from '../exceptions/api.error'
 class UserService {
 
     async register(username: string, password: string) {
-        const oneUser = await User.findOne({})
-        if (oneUser) {
-            throw ApiError.BadRequest('Администратор уже зарегистрирован')
-        }
         const candidate = await User.findOne({ username })
         if (candidate) {
             throw ApiError.BadRequest('Пользователь с таким username уже существует')
