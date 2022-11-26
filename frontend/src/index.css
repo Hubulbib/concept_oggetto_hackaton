@@ -156,7 +156,7 @@ body {
   align-items: center;
   margin-top: 96px;
 }
-.auth__input {
+.auth__input, .form1__item {
   width: 300px;
   border-bottom: 2px solid #000000;
   padding-top: 7px;
@@ -167,10 +167,12 @@ body {
 .inp-login {
   width: 100%;
   letter-spacing: 0.105em;
+  text-align: center;
 }
 .inp-pass {
   width: 100%;
   letter-spacing: 0.105em;
+  text-align: center;
 }
 .inp-pass::placeholder, .inp-login::placeholder {
   color: #000;
@@ -189,4 +191,49 @@ body {
 .btn-signIn:hover {
   background-color: #fff;
   color: #000;
+}
+.form__container {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form__block {
+  background-color: #F9D400;
+  width: 470px;
+  padding: 131px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 21px;
+  animation: shadow 7s infinite ease-in-out;
+}
+.form__logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.form__title {
+  color: rgba(249, 212, 0, 1);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 0.16em;
+  margin-bottom: 30px;
+}
+.form1__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form1__item:not(:last-child) {
+  margin-bottom: 76px;
+}
+.btn-form {
+  margin-bottom: 55px;
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './img/logo.svg';
+import Inp from '../../components/Inp';
+import Btn from '../../components/Btn';
 
 
 function Auth() {
@@ -12,12 +14,12 @@ function Auth() {
         <div className='auth__sign-in'>
           <ul className='auth__list'>
             <li className='auth__input'>
-              <ALog />
+              <Inp class="inp-login" value="Login" type="text"></Inp>
             </li>
             <li className='auth__input'>
-              <APass />
+            <Inp class="inp-pass" value="Password" type="password"></Inp>
             </li>
-            <ABtn />
+            <Btn class="btn-signIn" value="Sign in" src="/form"/>
           </ul>
         </div>
       </div>
@@ -25,21 +27,6 @@ function Auth() {
   )
 }
 
-function ALog() {
-  return (
-    <input className='inp-login' placeholder='Login'></input>
-  )
-}
-function APass() {
-  return (
-    <input type="password" placeholder='Password' className='inp-pass'></input>
-  )
-}
 
-function ABtn() {
-  return (
-    <button className='btn-signIn'>Sign in</button>
-  )
-}
 
 export default Auth
