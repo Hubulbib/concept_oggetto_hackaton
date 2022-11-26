@@ -204,7 +204,7 @@ body {
 .form__block {
   background-color: #F9D400;
   width: 470px;
-  padding: 131px 0 0 0;
+  padding: 70px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,6 +237,41 @@ body {
 .btn-form {
   margin-bottom: 55px;
 }
+
+
+.form2 {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form2__title {
+  max-width: 354px;
+  text-align: center;
+  margin-bottom: 37px;
+}
+.form2__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form2__item {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.form2__text {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+.form2__title {
+  font-weight: 500;
+}
+
 
 
 .form3 {

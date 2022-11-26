@@ -12,7 +12,7 @@ import Forms from './pages/form/Forms';
 
 function App() {
   return (
-    <Form3 />
+    <Forms />
   );
 }
 
