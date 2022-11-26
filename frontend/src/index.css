@@ -194,13 +194,14 @@ body {
 }
 .form__block {
   background-color: #F9D400;
-  width: 470px;
+  min-width: 470px;
   padding: 70px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 21px;
   animation: shadow 7s infinite ease-in-out;
+  z-index: 30;
 }
 .form__logo {
   position: absolute;
@@ -331,4 +332,67 @@ body {
 }
 .form3__btn:hover {
   background-color: #fff;
+}
+
+
+
+
+.form5__content {
+  width: 1115px;
+  background-color: #F9D400;
+  height: 465px;
+  padding: 46px 38px 43px 127px;
+  z-index: 304;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form5__avatar {}
+.avatar {}
+.avatar__title {}
+.avatar__photo {
+  width: 267px;
+  height: 267px;
+  position: relative;
+}
+.avatar__img-pare {}
+.avatar__face {}
+.avatar__icon {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: -23;
+}
+.avatar__photo:hover .avatar__icon {
+  z-index: 3;
+}
+.avatar__photo:hover .avatar__face {
+  opacity: .8;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.form5__write {}
+.write {}
+.write__title {}
+.write__text {}
+.write__textarea {
+  width: 440px;
+  height: 365px;
+  background-color: #000;
+  border-radius: 21px;
+  color: #fff;
+  padding: 20px;
+  resize: none; 
+}
+
+
+.avatar__title, .write__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 12px;
 }
