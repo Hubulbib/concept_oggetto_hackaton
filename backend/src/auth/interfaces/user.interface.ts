@@ -1,17 +1,7 @@
-export interface Iuser {
+import {ISurvey} from '../../survey/interfaces/survey.interface'
+
+export interface IUser {
     username: string
     password: string
-    survey: {
-        name: string
-        surname: string
-        country: string
-        city: string
-        department: string
-        job: string
-        maritalStatus: string
-        alcohol: string
-        smoking: string
-        sport: string
-        interests: string[]
-    }
+    survey: ISurvey
 }

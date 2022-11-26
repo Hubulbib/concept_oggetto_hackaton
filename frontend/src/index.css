@@ -12,16 +12,6 @@
 	box-sizing: border-box;
 }
 
-:focus,
-:active {
-	/*outline: none;*/
-}
-
-a:focus,
-a:active {
-	/* outline: none;*/
-}
-
 /* Links */
 
 a, a:link, a:visited  {
@@ -205,7 +195,7 @@ body {
 .form__block {
   background-color: #F9D400;
   width: 470px;
-  padding: 70px 0 0 0;
+  padding: 131px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,7 +228,6 @@ body {
 .btn-form {
   margin-bottom: 55px;
 }
-
 
 .form2 {
   width: 470px;
@@ -280,7 +269,6 @@ body {
 }
 
 
-
 .form3 {
   padding-top: 89px;
   width: 100%;
@@ -296,7 +284,6 @@ body {
   left: 20px;
   top: 20px;
 }
-.form3__title {}
 .form3__sub {
   background-color: #F9D400;
   font-size: 24px;
