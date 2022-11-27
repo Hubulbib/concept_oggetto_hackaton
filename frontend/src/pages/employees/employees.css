@@ -90,11 +90,9 @@
   line-height: 20px;
   letter-spacing: normal;
 }
-._sort-activated {}
 ._sort-button__img {
   margin-right: 15px;
 }
-._sort-button__text {}
 .employees__list {
   width: 1540px;
   height: 700px;
