@@ -4,7 +4,7 @@ export interface ISurvey {
     surname: string
     age: number
     city: string
-    department: string
+    project: string
     job: string
     maritalStatus: string
     alcohol: string

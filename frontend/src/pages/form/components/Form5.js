@@ -1,25 +1,32 @@
-import React from 'react';
-import face from '../img/avatar__face.svg';
-import icon from '../img/avatar__icon.png'
+import React, {useContext, useEffect, useState} from 'react';
+import {Context} from "../../../index";
+import {observer} from "mobx-react-lite";
 
-export default function Form5() {
+export default observer(function Form5() {
+
+    const [photo, setPhoto] = useState('')
+    const [fact, setFact] = useState('')
+
+    const {SurveyStore: {setCreatedForm, createdForm}} = useContext(Context)
+
+    useEffect(() => {
+        setCreatedForm({...createdForm, photo, fact})
+    }, [photo, fact])
+
   return (
     <div className='form5__content'>
       <div className='form5__avatar avatar'>
         <h4 className='avatar__title'>Add photo </h4>
-        <div className='avatar__photo'>
-          <div className='avatar__img-pare'>
-            <img src={face} className='avatar__face'/>
-            <img src={icon} className='avatar__icon'/>
+          <div className='write__text'>
+              <textarea value={photo} onChange={e => setPhoto(e.target.value)} style={{height: '20%', textAlign: 'center'}} placeholder='Link' className='write__textarea'></textarea>
           </div>
-        </div>
       </div>
       <div className='form5__write write'>
         <h4 className='write__title'>Facts about me</h4>
         <div className='write__text'>
-          <textarea className='write__textarea'></textarea>
+          <textarea value={fact} onChange={e => setFact(e.target.value)} className='write__textarea'></textarea>
         </div>
       </div>
     </div>
   ) 
-}
+})

@@ -1,15 +1,26 @@
-import React from 'react';
-import Activity from './pages/activity/Activity';
-import Employees from './pages/employees/Employees';
-import Forms from './pages/form/Forms';
-import Main from './pages/main/Main';
-import PostActive from './pages/post_active/PostActive';
-import Profile from './pages/profile/Profile';
+import React, {useContext, useEffect} from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import {routes} from './routers/Router';
+import {Context} from './index';
+import {observer} from "mobx-react-lite";
 
 function App() {
+
+  const { AuthStore: {checkAuth, isAuth, isSurveyExists} } = useContext(Context)
+
+  useEffect(() => {
+    if (localStorage.getItem('token')) {
+      checkAuth()
+    }
+  }, [checkAuth])
+
+  useEffect(() => {}, [isSurveyExists])
+
   return (
-    <Forms />
+    <BrowserRouter>
+      {routes(isAuth, isSurveyExists)}
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default observer(App);

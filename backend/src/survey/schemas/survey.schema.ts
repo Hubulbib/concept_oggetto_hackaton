@@ -7,7 +7,7 @@ const schema = new Schema<ISurvey>({
     surname: {type: String, required: true},
     age: {type: Number, required: true},
     city: {type: String, required: true},
-    department: {type: String, required: true},
+    project: {type: String, required: true},
     job: {type: String, require: true},
     maritalStatus: {type: String, required: true},
     alcohol: {type: String, required: true},
