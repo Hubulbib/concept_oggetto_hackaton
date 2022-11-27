@@ -1,0 +1,47 @@
+.postActive {
+  background-color: #000;
+  height: 150vh;
+  zoom: 67%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.postActive__list {
+  display: flex;
+  gap: 112px;
+  
+}
+.postActive__logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.postActive__item {
+  background-color: #F9D400;
+  width: 470px;
+  border-radius: 21px;
+  animation: shadow 4s ease infinite;
+}
+.postActive__extra {
+  margin: 100px 0 90px 0;
+  width: 100%;
+}
+.postActive__extra-text {
+  padding:40px;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+}
+@keyframes shadow {
+  from {
+    box-shadow: 0px 0px 250px 60px rgba(249, 212, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0px 0px 150px 40px rgba(249, 212, 0, 0.3);
+  }
+  to {
+    box-shadow: 0px 0px 250px 60px rgba(249, 212, 0, 0.3);
+  }
+}
