@@ -14,7 +14,7 @@ export default function Forms() {
       </div>
       <h1 className='form__title'>Your form</h1>
       <div className='form__block'>
-        <Form5 />
+        <Form2 />
         <Btn class="btn-signIn btn-form" value="Enter"/> 
       </div>
     </div>
