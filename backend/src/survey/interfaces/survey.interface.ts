@@ -5,9 +5,10 @@ export interface ISurvey {
     age: number
     city: string
     department: string
+    job: string
     maritalStatus: string
     alcohol: string
     smoking: string
     sport: string
-    interests: string[]
+    fact: string
 }
